@@ -1,11 +1,11 @@
-package com.record.record.feature
+package com.record.record.feature.database
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity
-data class User(
+@Entity(tableName = "user")
+data class UserEntity(
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "user_id")
